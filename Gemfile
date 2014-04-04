@@ -32,3 +32,11 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
+
+# need Sprockets for to read css, javascript
+gem 'sprockets', '2.11.0'
+gem 'slim', '2.0.0'
+gem 'sprockets-rails', '2.0.0'
+
+#Heroku request: CVE-2014-2525
+gem 'psych', '~> 2.0.5'
